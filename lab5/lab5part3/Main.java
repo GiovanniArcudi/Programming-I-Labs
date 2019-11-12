@@ -52,12 +52,12 @@ public class Main {
          * Uses the getWordSet() method to make complete set of all the words from both WordGroups, then loops over the
          * new HashSet to print a complete list of all words with the word counts from each of the hashmaps.
          */
-        for (String word: platoQuote.getWordCounts().keySet()){
+        for (String word: platoQuote.getWordCounts().keySet()) {
             int value = platoQuote.getWordCounts().get(word);
             System.out.println(word + ": " + value);
         }
 
-        for (String word: rooseveltQuote.getWordCounts().keySet()){
+        for (String word: rooseveltQuote.getWordCounts().keySet()) {
             int value = rooseveltQuote.getWordCounts().get(word);
             System.out.println(word + ": " + value);
         }
