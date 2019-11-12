@@ -4,9 +4,9 @@
  *
  * @author Giovanni Arcudi
  */
-public class GuessingGame{
+public class GuessingGame {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Integer numberToGuess;
         Integer guessedNumber;
 
@@ -19,11 +19,11 @@ public class GuessingGame{
         guessedNumber = myToolbox.readIntegerFromCmd();
 
         // Checking whether the guessed number is equal to the number to guess.
-        if (numberToGuess.equals(guessedNumber)){
+        if (numberToGuess.equals(guessedNumber)) {
             System.out.println("right");
         } else {
             // If the guessed number is not equal to the number to guess then we have to find out if it is greater or smaller.
-            if (numberToGuess > guessedNumber){
+            if (numberToGuess > guessedNumber) {
                 System.out.println("too low");
             } else {
                 // If the guessed number is not equal to and not smaller than the number to guess, then it must be greater.
