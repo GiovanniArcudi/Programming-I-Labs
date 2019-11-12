@@ -14,7 +14,7 @@ public class UserGroup {
      * This is the UserGroup class constructor.
      * Every UserGroup created by the constructor will have an ArrayList of Users called "group".
      */
-    public UserGroup(){
+    public UserGroup() {
         group = new ArrayList<User>();
     }
 
@@ -40,7 +40,7 @@ public class UserGroup {
      * When the method getUser(int i) is called, it takes an int as a parameter and returns the User in that slot of the
      * ArrayList.
      */
-    public User getUser(int i){
+    public User getUser(int i) {
         return group.get(i);
     }
 
@@ -49,7 +49,7 @@ public class UserGroup {
      *  the username and userType of each user in the ArrayList.
      */
     public void printUsernames() {
-        for(User user : group){
+        for(User user : group) {
             System.out.println(user.getUsername() + " " + user.getUserType());
         }
     }
@@ -57,7 +57,7 @@ public class UserGroup {
     /**
      * When the method removeFirstUser() is called, it removes the first User (index position 0) from the ArrayList.
      */
-    public void removeFirstUser(){
+    public void removeFirstUser() {
         group.remove(0);
     }
 
@@ -66,7 +66,7 @@ public class UserGroup {
      * To know the index position of the last element we use group.size() - which gives the number of users in
      * the ArrayList - minus one (because index starts from 0 and not 1).
      */
-    public void removeLastUser(){
+    public void removeLastUser() {
         group.remove(group.size() - 1);
     }
 
@@ -93,7 +93,7 @@ public class UserGroup {
     /**
      * When the method getUserIterator() is called, it returns an Iterator from the ArrayList.
      */
-    public Iterator getUserIterator(){
+    public Iterator getUserIterator() {
         return group.iterator();
     }
 }
