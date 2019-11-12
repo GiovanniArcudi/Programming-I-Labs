@@ -5,8 +5,7 @@
  *
  * @author Giovanni Arcudi
  */
-
-public class CardLock{
+public class CardLock {
     SmartCard lastCardSeen;
     boolean lockUnlocked;
     boolean studentsAllowed;
@@ -15,14 +14,14 @@ public class CardLock{
      * When the method swipeCard(Smartcard swiped) is called, it sets the SmartCard it has received as parameter
      * to be the last card seen.
      */
-    public void swipeCard(SmartCard swiped){
+    public void swipeCard(SmartCard swiped) {
         lastCardSeen = swiped;
     }
 
     /**
      * When the method getLastCardSeen() is called, it returns the last smart card that was swiped.
      */
-    public SmartCard getLastCardSeen(){
+    public SmartCard getLastCardSeen() {
         return lastCardSeen;
     }
 
@@ -30,11 +29,10 @@ public class CardLock{
      * When the method isUnlocked() is called, it returns a boolean indicating whether the lock is unlocked or not.
      * The door keeps locked only if the last card seen is astudent card and student access is not allowed.
      */
-    public boolean isUnlocked(){
+    public boolean isUnlocked() {
         if(lastCardSeen.isStaff() || studentsAllowed) {
             lockUnlocked = true;
-        }
-        else{
+        } else {
             lockUnlocked = false;
         }
         return lockUnlocked;
@@ -42,7 +40,7 @@ public class CardLock{
 
     /** The toggleStudentAccess() method acts like a push switch or power button, toggling whether students are
      * allowed to unlock the CardLock. */
-    public void toggleStudentAccess(){
+    public void toggleStudentAccess() {
         studentsAllowed = !studentsAllowed;
     }
 }
