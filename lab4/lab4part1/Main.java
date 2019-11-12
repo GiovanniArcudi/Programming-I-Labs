@@ -21,7 +21,7 @@ public class Main {
         /**
          * Uses a traditional for loop to output a multiplication table up to 20 times the number specified by the user.
          */
-        for(int i=1; i<21; i++){
+        for(int i=1; i<21; i++) {
             System.out.println(userNumber * i);
         }
 
@@ -35,7 +35,7 @@ public class Main {
             integerToSum++;
 
             // When the sum is grater than 500 it prints out the number of iterations required to reach that number.
-            if(sum > 500){
+            if(sum > 500) {
                 System.out.println(integerToSum - 1);
             }
         }
