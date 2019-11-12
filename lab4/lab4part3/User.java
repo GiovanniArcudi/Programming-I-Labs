@@ -4,7 +4,7 @@
  *
  * @author Giovanni Arcudi
  */
-public class User{
+public class User {
     private String username;
     private String userType;
     private String name;
@@ -13,7 +13,7 @@ public class User{
      * This is the User class constructor.
      * It takes the username, userType and name as parameters to set the object's variables.
      */
-    public User(String username, String userType, String name){
+    public User(String username, String userType, String name) {
         this.username = username;
         this.userType = userType;
         this.name = name;
@@ -22,7 +22,7 @@ public class User{
     /**
      * When the method getUsername() is called, it returns the username of the user.
      */
-    public String getUsername(){
+    public String getUsername() {
         return username;
     }
 
@@ -44,7 +44,7 @@ public class User{
      * When the method setUserType(String type) is called, it sets the user type of the User object to what the method
      * has received as a parameter.
      */
-    public void setUserType(String type){
+    public void setUserType(String type) {
         userType = type;
     }
 }
