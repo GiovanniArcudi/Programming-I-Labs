@@ -3,7 +3,6 @@
  *
  * @author Giovanni Arcudi
  */
-
 public class ATM {
 
     Toolbox myToolbox = new Toolbox();      // Creates a new toolbox.
