@@ -1,33 +1,37 @@
 /**
- * This program defines a CardLock. Every CardLock has an instance variable to remember the last smart card seen.
+ * Every {@link CardLock} has an instance variable to remember the last {@link SmartCard} seen.
  * A CardLock can be staff only, or it can allow access to both students and staff.
  * A newly created CardLock allows only staff access.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class CardLock {
-    SmartCard lastCardSeen;
-    boolean lockUnlocked;
-    boolean studentsAllowed;
+    SmartCard lastCardSeen;         // The last SmartCard seen.
+    boolean lockUnlocked;           // True if the door is unlocked, false otherwise.
+    boolean studentsAllowed;        // True if students are allowed, false otherwise.
 
     /**
-     * When the method swipeCard(Smartcard swiped) is called, it sets the SmartCard it has received as parameter
-     * to be the last card seen.
+     * Sets the {@link SmartCard} it has received as parameter to be the {@code lastCardSeen}.
      */
     public void swipeCard(SmartCard swiped) {
         lastCardSeen = swiped;
     }
 
     /**
-     * When the method getLastCardSeen() is called, it returns the last smart card that was swiped.
+     * Returns the last {@link SmartCard} that was swiped.
+     *
+     * @return the last SmartCard seen
      */
     public SmartCard getLastCardSeen() {
         return lastCardSeen;
     }
 
     /**
-     * When the method isUnlocked() is called, it returns a boolean indicating whether the lock is unlocked or not.
+     * Returns a boolean indicating whether the lock is unlocked or not.
      * The door keeps locked only if the last card seen is astudent card and student access is not allowed.
+     *
+     * @return true if the door is unlocked, false otherwise
      */
     public boolean isUnlocked() {
         if(lastCardSeen.isStaff() || studentsAllowed) {
@@ -38,8 +42,9 @@ public class CardLock {
         return lockUnlocked;
     }
 
-    /** The toggleStudentAccess() method acts like a push switch or power button, toggling whether students are
-     * allowed to unlock the CardLock. */
+    /** 
+     * This method acts like a push switch or power button, toggling whether students are allowed to unlock the {@link CardLock}. 
+     */
     public void toggleStudentAccess(){
         studentsAllowed = !studentsAllowed;
     }
