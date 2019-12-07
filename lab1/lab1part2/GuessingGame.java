@@ -6,12 +6,11 @@
  * @version 1.0
  */
 public class GuessingGame {
-    
     public static void main(String[] args) {
         Integer numberToGuess;
         Integer guessedNumber;
 
-        //Creates a new Toolbox.
+        // Creates a new Toolbox.
         Toolbox myToolbox = new Toolbox();
 
         System.out.println("Welcome to Guessing Game");
