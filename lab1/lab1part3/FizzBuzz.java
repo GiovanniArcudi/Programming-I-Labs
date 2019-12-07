@@ -3,28 +3,31 @@
  * divisible by five with the word "Buzz".
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
-public class FizzBuzz {     //Class wrapper.
+public class FizzBuzz {
+    public static void main(String[] args) {
 
-    public static void main(String[] args) {        //Main method wrapper.
-
-        /* Assign "i" the value 1, completes the instructions inside the curly brackets, and then increses the value
+        /* Assigns "i" the value 1, completes the instructions inside the curly brackets, and then increses the value
         of "i". It repeats this for 60 times. */
-        for(Integer i = new Integer(1); i < 61; i++) {
+        for (Integer i = new Integer(1); i < 61; i++) {
 
-            if(i % 3 == 0) {     //Checking if "i" is divisible by 3.
-                System.out.print("Fizz");       //If true, prints "Fizz".
+            // Checks if "i" is divisible by 3 and, if true, prints "Fizz".
+            if (i % 3 == 0) {
+                System.out.print("Fizz");
             }
             
-            if(i % 5 == 0) {     //Checking if "i" is divisible by 5.
-                System.out.print("Buzz");        //If true, prints "Buzz".
+            // Checks if "i" is divisible by 5 and, if true, prints "Buzz".
+            if (i % 5 == 0) {
+                System.out.print("Buzz");
             }
 
-            if(i % 3 != 0 && i % 5 != 0) {       //Checking if "i" is not divisible by 3 and 5.
-                System.out.print(i);        //If "i" is not divisible by 3 and not divisible by 5, then it prints the value of "i".
+            // Checks if "i" is not divisible by 3 and 5, if so, prints out the value of "i".
+            if(i % 3 != 0 && i % 5 != 0) {
+                System.out.print(i);
             }
-
-            System.out.println();       //Creates a new line where to write about the next number.
+            
+            System.out.println();
         }
     }
 }
