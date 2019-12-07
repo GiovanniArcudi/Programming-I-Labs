@@ -6,8 +6,8 @@
 * @version 2.0
 */
 public class SmartCard {
-    String ownerName;
-    boolean staff = false;
+    String ownerName;           // The name of the SmartCard's owner.
+    boolean staff = false;      // True if the SmartCard belongs to staff, false otherwise.
 
     /**
      * This is the {@link SmartCard} class constructor.
