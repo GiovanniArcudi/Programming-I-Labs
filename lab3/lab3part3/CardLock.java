@@ -1,4 +1,3 @@
-
 /**
  * Every {@link CardLock} has an instance variable to remember the last {@link SmartCard} seen.
  * A CardLock can be staff only, or it can allow access to both students and staff.
