@@ -1,14 +1,15 @@
 /**
- * This program creates an ATM object and asks the user to enter the balance thatthey would like in their account.
+ * Creates an {@link ATM} object and asks the user to enter the balance that they would like to have in their account.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class ATM {
-
-    Toolbox myToolbox = new Toolbox();      // Creates a new toolbox.
+    
+    Toolbox myToolbox = new Toolbox();
 
     /**
-     * Creates an ATM object and then calls a method called go().
+     * Creates an {@link ATM} object and then calls {@link #go()}.
      */
     public static void main(String[] args) {
         ATM myATM = new ATM();
@@ -16,8 +17,7 @@ public class ATM {
     }
 
     /**
-     * When the method go() is called the program prompts the user to enter the balance that they would like in
-     * their account.
+     * Prompts the user to enter the balance that they would like in their account.
      */
     public void go() {
         System.out.println("Welcome to online ATM banking");
