@@ -1,16 +1,16 @@
 /**
- * This program creates a SmartCard. Every SmartCard has a string containing the owner's name and a boolean inticating
- * whether it is a staff SmartCard.
- * A newly created SmartCard is, by default, a student card.
- *
- * @author Giovanni Arcudi
- */
+* Every {@link SmartCard} has a string containing the owner's name and a boolean inticating whether it is a staff SmartCard.
+* A newly created SmartCard is, by default, a student card.
+*
+* @author Giovanni Arcudi
+* @version 2.0
+*/
 public class SmartCard {
-    String ownerName;
-    boolean staff = false;
+    String ownerName;           // The name of the SmartCard's owner.
+    boolean staff = false;      // True if the SmartCard belongs to staff, false otherwise.
 
     /**
-     * This is the SmartCard class constructor.
+     * This is the {@link SmartCard} class constructor.
      * It takes a String parameter to set the owner of the card.
      */
     public SmartCard(String ownerName) {
@@ -18,29 +18,32 @@ public class SmartCard {
     }
 
     /**
-     * When the method getOwner() is called, it returns the owner of the SmartCard.
+     * Returns the {@code ownerName} of the SmartCard.
+     *
+     * @return the owner of the SmartCard
      */
     public String getOwner() {
         return ownerName;
     }
 
     /**
-     * When the method setStaff(boolean staff) is called, it sets the staff status of the SmartCard to what it has
-     * received as a parameter.
+     * Sets the staff status of the {@link SmartCard} depending on the boolean value received as a parameter.
      */
     public void setStaff(boolean staff) {
         this.staff = staff;
     }
 
     /**
-     * When  the method isStaff() is called, it returns whether the card belongs to a member of staff.
+     * Returns whether the {@link SmartCard} belongs to a member of staff.
+     *
+     * @return true if the SmartCard belongs to a member of the staff, false otherwise
      */
     public boolean isStaff() {
         return staff;
     }
 
     /**
-     * It creates a new SmartCard.
+     * Creates a new {@link SmartCard}.
      */
     public static void main(String[] args) {
         SmartCard mySmartCard = new SmartCard("Giovanni");
