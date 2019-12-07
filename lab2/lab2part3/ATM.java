@@ -1,16 +1,18 @@
 /**
- * This program simulates an ATM. After asking the user to enter the balance that they would like in their account,
- * it allows them to withdraw or deposit an amount, inquire about the balance, or quit the ATM.
- * In this version of the program the ATM works continuously, prompting the user for what they would like to do next.
+ * This program simulates an {@link ATM}. After asking the user to enter the {@code balance} that they would like in their account,
+ * it allows them to {@link #withdraw()} or {@link #deposit()} an amount, {@link #inquire()} about the {@code balance},
+ * or {@link #quit()} the {@link ATM}.
+ * In this version of the program the {@link ATM} works continuously, prompting the user for what they would like to do next.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public class ATM {
-    Toolbox myToolbox = new Toolbox();      // Creates a new toolbox.
+    Toolbox myToolbox = new Toolbox();
     int balance;
 
     /**
-     * Creates an ATM object and then calls a method called go().
+     * Creates an {@link ATM} object and then calls {@link #go()}.
      */
     public static void main(String[] args) {
         ATM myATM = new ATM();
@@ -18,9 +20,8 @@ public class ATM {
     }
 
     /**
-     * When the method go() is called the program prompts the user to enter the balance that they would like in
-     * their account (negative starting balances are not allowed). Then it shows the menu with all the operations
-     * that the user can do.
+     * Prompts the user to enter the balance that they would like in their account (negative starting balances are not allowed).
+     * Then it shows the menu with all the operations that the user can do.
      * */
     public void go() {
         System.out.println("Welcome to online ATM banking");
@@ -28,7 +29,7 @@ public class ATM {
 
         balance = myToolbox.readIntegerFromCmd();
 
-        // The program allows the user another attempt until they provide a valid input.
+        // Allows the user another attempt until they provide a valid input.
         while (balance < 0) {
             System.out.println("How much do you want in your account?");
             balance = myToolbox.readIntegerFromCmd();
@@ -56,9 +57,8 @@ public class ATM {
     }
 
     /**
-     *  When the method withdraw() is called the program prompts the user to enter the amount that they would like to
-     *  withdraw form their account (negative withdrawals are not accepted). Once entered the amount, the withdrawal
-     *  is performed and the new account balance is showed.
+     * Prompts the user to enter the amount that they would like to {@link #withdraw()} form their account (negative withdrawals 
+     * not accepted). Once entered the amount, the withdrawal is performed and the new account {@code balance} is showed.
      */
     public void withdraw() {
         System.out.println("*****************************************");
@@ -68,7 +68,7 @@ public class ATM {
 
         int withdrawal = myToolbox.readIntegerFromCmd();
 
-        /* The program doesn't perform negative withdrawals and doesn't allow the balance to drop to a negative number,
+        /* The program doesn't perform negative withdrawals and doesn't allow the {@code balance} to drop to a negative number,
         but allows the user another attempt until they provide a valid input. */
         while (withdrawal < 0 || withdrawal > balance) {
             System.out.println("How much would you like to withdraw?");
@@ -83,9 +83,8 @@ public class ATM {
     }
 
     /**
-     *  When the method deposit() is called the program prompts the user to enter the amount that they would like to
-     *  deposit in their account (negative deposits are not accpted). Once entered the amount, the deposit is performed
-     *  and the new account balance is showed.
+     * Prompts the user to enter the amount that they would like to {@link #deposit()} in their account (negative deposits
+     * are not accpted). Once entered the amount, the deposit is performed and the new account {@code balance} is showed.
      *  */
     public void deposit() {
         System.out.println("*****************************************");
@@ -95,7 +94,7 @@ public class ATM {
 
         int deposit = myToolbox.readIntegerFromCmd();
 
-        //The program allows the user another attempt until they provide a valid input.
+        // Allows the user another attempt until they provide a valid input.
         while (deposit < 0) {
             System.out.println("How much would you like to deposit?");
             deposit = myToolbox.readIntegerFromCmd();
@@ -109,7 +108,7 @@ public class ATM {
     }
 
     /**
-     * When the method inquire() is called the account balance is showed.
+     * Shows the account {@code balance}.
      */
     public void inquire() {
         System.out.println("*****************************************");
@@ -118,13 +117,12 @@ public class ATM {
     }
 
     /**
-     * When the method quit() is called the ATM says goodbye to the customer and stops working.
+     * Says goodbye to the customer and quits.
      */
     public void quit() {
         System.out.println("*****************************************");
         System.out.println("                GoodBye!");
         System.out.println("*****************************************");
-
         System.exit(0);
     }
 }
