@@ -1,17 +1,18 @@
 /**
- * This program defines a User. Every User object has a string cointaining the username, a string cointaining the
- * usertype ('user', 'editor' or 'admin') and a string cointaining the real name of the user.
+ * Every {@link User} object has a string cointaining the {@code username}, a string cointaining the
+ * {@code userType} ("user", "editor" or "admin") and a string cointaining the {@code name} of the user.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class User {
-    private String username;
-    private String userType;
-    private String name;
+    private String username;        // The user's username.
+    private String userType;        // The type of user.
+    private String name;            // The real name of the user.
 
     /**
-     * This is the User class constructor.
-     * It takes the username, userType and name as parameters to set the object's variables.
+     * This is the {@link User} class constructor.
+     * It takes the {@code username}, {@code userType} and {@code name} as parameters to set the object's variables.
      */
     public User(String username, String userType, String name) {
         this.username = username;
@@ -20,29 +21,34 @@ public class User {
     }
 
     /**
-     * When the method getUsername() is called, it returns the username of the user.
+     * {@link User}'s {@code username} accessor method.
+     *
+     * @return the user's username
      */
     public String getUsername() {
         return username;
     }
-
+    
     /**
-     * When the method getUserType() is called, it returns the type of user ('user', 'editor' or 'admin').
+     * {@link User}'s {@code userType} accessor method.
+     *
+     * @return the user type
      */
     public String getUserType() {
         return userType;
     }
-
+    
     /**
-     * When the method getName() is called, it returns the name of the user.
+     * {@link User}'s {@code name} accessor method.
+     *
+     * @return user's real name
      */
     public String getName() {
         return name;
     }
 
     /**
-     * When the method setUserType(String type) is called, it sets the user type of the User object to what the method
-     * has received as a parameter.
+     * Sets the {@code userType} of the {@link User} object to the type passed as a parameter.
      */
     public void setUserType(String type) {
         userType = type;
