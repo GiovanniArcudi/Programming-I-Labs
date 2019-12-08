@@ -1,33 +1,35 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
 /**
- * This program defines a UserGroup.
- * Every UserGroup cointains an ArrayList of Users and some methods to operate with them.
+ * Every {@link UserGroup} cointains an ArrayList of Users and some methods to operate with them.
  *
  * @author Giovanni Arcudi
+ * @version 2.0
  */
-import java.util.ArrayList;     // Importing the ArrayList library.
-import java.util.Iterator;     // Importing the Iterator library.
-
 public class UserGroup {
-    private ArrayList<User> group;
-
+    private ArrayList<User> group;      // The ArrayList storing all the users.
+    
     /**
-     * This is the UserGroup class constructor.
-     * Every UserGroup created by the constructor will have an ArrayList of Users called "group".
+     * This is the {@link UserGroup} class constructor.
+     * Every {@link UserGroup} created by the constructor will have a {@code group}'s ArrayList.
      */
     public UserGroup() {
         group = new ArrayList<User>();
     }
-
+    
     /**
-     * When the method getUsers() is called, it returns the ArrayList of all the Users in that group.
+     * {@link UserGroup}'s {@code group} accessor method.
+     *
+     * @return the ArrayList storing all the users
      */
     public ArrayList<User> getUsers() {
         return group;
     }
 
+
     /**
-     * When the method addSampleData() is called, it creates 10 Users and using the ArrayList's add() method put the 10
-     * new User objects into the "group" ArrayList.
+     * Creates 10 {@link User} objects and puts them into the {@code group} ArrayList.
      */
     public void addSampleData () {
         for(int i=0; i<10; i++) {
@@ -37,16 +39,14 @@ public class UserGroup {
     }
 
     /**
-     * When the method getUser(int i) is called, it takes an int as a parameter and returns the User in that slot of the
-     * ArrayList.
+     * Takes an int as a parameter and returns the {@link User} in that slot of the {@code group} ArrayList.
      */
     public User getUser(int i) {
         return group.get(i);
     }
 
     /**
-     *  When the method printUsernames() is called, it loops through the ArrayList using an enhanced for loop and prints
-     *  the username and userType of each user in the ArrayList.
+     * Loops through the {@code group} ArrayList printing the {@code username} and {@code userType} of each {@link User}.
      */
     public void printUsernames() {
         for(User user : group) {
@@ -55,15 +55,15 @@ public class UserGroup {
     }
 
     /**
-     * When the method removeFirstUser() is called, it removes the first User (index position 0) from the ArrayList.
+     * Removes the first {@link User} (index position 0) from the {@code group} ArrayList.
      */
     public void removeFirstUser() {
         group.remove(0);
     }
 
     /**
-     * When the method removeLastUser() is called, it removes the last user from the list.
-     * To know the index position of the last element we use group.size() - which gives the number of users in
+     * Removes the last {@link User} from the {@code group} ArrayList.
+     * To know the index position of the last element we use {@link #size()} - which gives the number of users in
      * the ArrayList - minus one (because index starts from 0 and not 1).
      */
     public void removeLastUser() {
@@ -71,19 +71,19 @@ public class UserGroup {
     }
 
     /**
-     * The method removeUser(String userToRemoveUsername) takes a String as a parameter which is the username you want
-     * to remove. Using an Iterator, it iterates over the Users Arraylist until it finds the user with that username
-     * and remove them.
+     * Takes a String as a parameter which is the {@code username} of the {@lik User} you want to remove.
+     * Using an Iterator, it iterates over the {@code group} Arraylist until it finds the {@link User} with that {@code username}
+     * and removes it.
      */
     public void removeUser(String userToRemoveUsername) {
-        Iterator<User> iter = group.iterator();     // Setting the Iterator.
+        Iterator<User> iter = group.iterator();
 
-        /* Iterating over the ArrayList, the iterator saves the User object's username in a variable useful to perform
+        /* Iterating over the ArrayList, the iterator saves the {@link User} object's {@code username} in a variable useful to perform
         the next operation. */
         while (iter.hasNext()) {
             String userToRemove = iter.next().getUsername();
 
-            // If the User's username is the same as the username we want to remove, it is removed.
+            // If the {@link User}'s {@code username} is the same as the one we want to remove, it is removed.
             if (userToRemoveUsername .equals(userToRemove)) {
                 iter.remove();
             }
@@ -91,7 +91,7 @@ public class UserGroup {
     }
 
     /**
-     * When the method getUserIterator() is called, it returns an Iterator from the ArrayList.
+     * Returns the Iterator from the {@code group} ArrayList.
      */
     public Iterator getUserIterator() {
         return group.iterator();
