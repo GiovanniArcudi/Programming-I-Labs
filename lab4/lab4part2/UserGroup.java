@@ -1,32 +1,33 @@
+import java.util.ArrayList;
+
 /**
- * This program defines a UserGroup.
- * Every UserGroup cointains an ArrayList of Users and some methods to operate with them.
+ * Every {@link UserGroup} cointains an ArrayList of Users and some methods to operate with them.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
-import java.util.ArrayList;     // Importing the ArrayList library.
-
 public class UserGroup {
-    private ArrayList<User> group;
+    private ArrayList<User> group;      // The ArrayList storing all the users.
 
     /**
-     * This is the UserGroup class constructor.
-     * Every UserGroup created by the constructor will have an ArrayList of Users called "group".
+     * This is the {@link UserGroup} class constructor.
+     * Every {@link UserGroup} created by the constructor will have a {@code group}'s ArrayList.
      */
     public UserGroup() {
         group = new ArrayList<User>();
     }
 
     /**
-     * When the method getUsers() is called, it returns the ArrayList of all the Users in that group.
+     * {@link UserGroup}'s {@code group} accessor method.
+     *
+     * @return the ArrayList storing all the users
      */
     public ArrayList<User> getUsers() {
         return group;
     }
 
     /**
-     * When the method addSampleData() is called, it creates 10 Users and using the ArrayList's add() method put the 10
-     * new User objects into the "group" ArrayList.
+     * Creates 10 {@link User} objects and puts them into the {@code group} ArrayList.
      */
     public void addSampleData () {
         for(int i=0; i<10; i++) {
@@ -36,16 +37,14 @@ public class UserGroup {
     }
 
     /**
-     * When the method getUser(int i) is called, it takes an int as a parameter and returns the User in that slot of the
-     * ArrayList.
+     * Takes an int as a parameter and returns the {@link User} in that slot of the {@code group} ArrayList.
      */
     public User getUser(int i) {
         return group.get(i);
     }
 
     /**
-     *  When the method printUsernames() is called, it loops through the ArrayList using an enhanced for loop and prints
-     *  the username and userType of each user in the ArrayList.
+     * Loops through the {@code group} ArrayList printing the {@code username} and {@code userType} of each {@link User}.
      */
     public void printUsernames() {
         for(User user : group) {
