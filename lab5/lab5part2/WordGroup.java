@@ -48,7 +48,6 @@ public class WordGroup {
             String[] wordsArray = wordGroup.getWordArray();
             wordsHashSet.add(wordsArray[i]);
         }
-
         return wordsHashSet;
     }
 }
