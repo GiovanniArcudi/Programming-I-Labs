@@ -1,18 +1,15 @@
 /**
- * This program creates two WordGroups respectively initialized with a quote by Plato and Roosevelt, and then prints out
- * each word cointained in the texts.
+ * This program creates two {@link WordGroup} objects respectively initialized with a quote by Plato and Roosevelt, and then uses two
+ * for loops to print out each word contained in the texts.
  *
  * @author Giovanni Arcudi
+ * @version 2.0
  */
 public class Main {
-
-    /**
-     * Performs different tasks for the two parts of the lab.
-     */
     public static void main(String[] args) {
 
         /**
-         * (Part I) Creates and inizializes the two WordGroups, then uses WordGroup class getWordArray() method to make
+         * Creates and inizializes the two {@link WordGroup} objects, then uses {@link WordGroup}'s {@link #getWordArray()} to make
          * two arrays of Strings cointaining single words, and finally loops over the two arrays printing out each word.
          */
         WordGroup platoQuote = new WordGroup("You can discover more about a person in an hour of play than in a year of conversation");
@@ -33,8 +30,7 @@ public class Main {
         }
 
         /**
-         * (Part II) Uses the getWordSet() method using the two WordGroups, then loops over the HashSet returned and
-         * prints the words from it.
+         * Uses the getWordSet() method using the two WordGroups, then loops over the HashSet returned and prints the words from it.
          */
         platoQuote.getWordSet(rooseveltQuote);
 
