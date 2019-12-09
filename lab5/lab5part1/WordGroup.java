@@ -18,6 +18,8 @@ public class WordGroup {
     /**
      * Returns the {@code separatedWords} Array of Strings, of which each string cointains one single word from {@code words}.
      * The String class {@link #split()} method is used to separate words on " ".
+     *
+     * @return an array containing each word from words, stored singularly
      */
     public String[] getWordArray() {
         String[] separatedWords = words.split(" ");
