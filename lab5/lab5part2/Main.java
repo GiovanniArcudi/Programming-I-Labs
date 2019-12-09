@@ -21,11 +21,11 @@ public class Main {
         String[] rooseveltWordsArray = rooseveltQuote.getWordArray();
 
         // Uses a two for loops to loop over the two arrays and print out each word.
-        for(int i = 0; i < platoWordsArray.length; i++) {
+        for (int i = 0; i < platoWordsArray.length; i++) {
             System.out.println(platoWordsArray[i]);
         }
 
-        for(int i = 0; i < rooseveltWordsArray.length; i++) {
+        for (int i = 0; i < rooseveltWordsArray.length; i++) {
             System.out.println(rooseveltWordsArray[i]);
         }
 
@@ -35,7 +35,7 @@ public class Main {
         platoQuote.getWordSet(rooseveltQuote);
 
         // Loops over the HashSet returned and prints the words from it.
-        for(String words : platoQuote.getWordSet(rooseveltQuote)) {
+        for (String words : platoQuote.getWordSet(rooseveltQuote)) {
             System.out.println(words);
         }
     }
