@@ -1,6 +1,6 @@
 /**
  * This program creates two {@link WordGroup} objects respectively initialized with a quote by Plato and Roosevelt, and then uses two
- * for loops to print out each word.
+ * for loops to print out each word contained in the textes.
  *
  * @author Giovanni Arcudi
  * @version 1.0
