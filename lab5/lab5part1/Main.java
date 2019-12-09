@@ -21,11 +21,11 @@ public class Main {
         String[] rooseveltWordsArray = rooseveltQuote.getWordArray();
 
         // Uses a two for loops to loop over the two arrays and print out each word.
-        for(int i = 0; i < platoWordsArray.length; i++) {
+        for (int i = 0; i < platoWordsArray.length; i++) {
             System.out.println(platoWordsArray[i]);
         }
 
-        for(int i = 0; i < rooseveltWordsArray.length; i++) {
+        for (int i = 0; i < rooseveltWordsArray.length; i++) {
             System.out.println(rooseveltWordsArray[i]);
         }
     }
