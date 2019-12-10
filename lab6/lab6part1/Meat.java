@@ -9,7 +9,7 @@ public class Meat extends Food {
 
     /**
      * This is the {@link Meat} class constructor.
-     * It takes a String as parameter and sets it as {@code name} of the {@link Meat}.
+     * It takes a String as parameter and sets it as {@code name} of the {@link Meat} object.
      */
     public Meat(String name) {
         super(name);
