@@ -8,8 +8,8 @@
 public class Parrot extends Omnivore {
 
     /**
-     * This is the Parrot class constructor.
-     * It takes a String and an integer as parameters and sets them as name and age of the Parrot.
+     * This is the {@link Parrot} class constructor.
+     * It takes a String and an int as parameters and sets them as {@code name} and {@code age} of the {@link Parrot}.
      */
     public Parrot(String name, int age) {
         super(name, age);
