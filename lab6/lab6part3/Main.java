@@ -1,18 +1,15 @@
 /**
- * This program demonstrates that it is possible to create wolf and parrot objects and use the methods defined in the
- * Animal superclass. It also creates a Meat and a Plant object.
+ * This program demonstrates that it is possible to create {@link Wolf} and {@link Parrot} objects and use the
+ * methods inherited by the {@link Animal} superclass. It also creates 2 new {@link Meat} and a {@link Plant} objects.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public class Main {
-
-    /**
-     * Performs different tasks for the three parts of the lab.
-     */
     public static void main(String[] args) {
 
         /**
-         * (Part I) Creates a Wolf, a Parrot, a Meat and a Plant object. Then it calls makeNoise() method on the wolf.
+         * Creates a {@link Wolf}, a {@link Parrot}, a {@link Meat} and a {@link Plant} object.
          */
         Wolf wolf = new Wolf("Giovanni", 18);
         Parrot parrot = new Parrot("Alessandro", 18);
@@ -20,16 +17,14 @@ public class Main {
         Meat beef = new Meat("Beef");
         Plant chicory = new Plant("Chicory");
 
-        wolf.makeNoise();
-
         /**
-         * (Part II) Calls the abstract makeNoise() method on the wolf.
+         * Calls the abstract {@link #makeNoise()} method on the {@link Wolf} object.
          */
         wolf.makeNoise();
 
         /**
-         * (Part III) Calls the eat() method on the wolf, the cow and the parrot, expecting to catch exceptions for the
-         * last two cases.
+         * Calls the {@link #eat()} method on the {@link Wolf}, the {@link Cow} and the {@link Parrot}, expecting to
+         * catch exceptions for the last two cases.
          */
         try {
             wolf.eat(beef);
