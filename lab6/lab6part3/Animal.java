@@ -1,17 +1,17 @@
 /**
- * This program defines an Animal, and is the abstract superclass of all other animals' classes.
- * Every Animal has a name and an age specified when it is created, the relative getter methods, and two abstract
- * methods: makeNoise() and eat().
+ * Every {@link Animal} has a {@code name} and an {@code age} specified when it is created, the relative getter methods,
+ * and two abstract methods: {@link #makeNoise()} and {@link #eat()}.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public abstract class Animal {
-    private String name;
-    private int age;
+    private String name;        // The name of the animal.
+    private int age;            // The age of the animal.
 
     /**
-     * This is the Animal class constructor.
-     * It takes a String and an integer as parameters and sets them as name and age of the Animal.
+     * This is the {@link Animal} class constructor.
+     * It takes a String and an int as parameters and sets them as {@code name} and {@code age} of the {@link Animal}.
      */
     public Animal(String name, int age) {
         this.name = name;
@@ -19,28 +19,32 @@ public abstract class Animal {
     }
 
     /**
-     * When the method getName() is called, it returns the name of the animal.
+     * Returns the {@code name} of the {@link Animal}.
+     *
+     * @return the name of the animal
      */
     public String getName() {
         return name;
     }
 
     /**
-     * When the method getAge() is called, it returns the age of the animal.
+     * Returns the {@code age} of the {@link Animal}.
+     * 
+     * @return the age of the animal
      */
     public int getAge() {
         return age;
     }
-
+    
     /**
-     * As different animals make different noises, each class has to provide its own implementation for making a noise.
+     * As different animals make different noises, each class has to provide its own implementation for {@link #makeNoise()}.
      * This is just an abstract method.
      */
     public abstract void makeNoise();
 
     /**
-     * As different animals eat different foods, each class has to provide its own implementation for eating.
-     * This is just an abstract method that takes a Food object as an argument and can throw exeptions.
+     * As different animals eat different foods, each class has to provide its own implementation for {@link #eat()}.
+     * This is just an abstract method that takes a {@link Food} object as an argument and can throw an Exeption.
      */
     public abstract void eat(Food food) throws Exception;
 }
