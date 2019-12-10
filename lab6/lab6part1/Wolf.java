@@ -9,7 +9,7 @@ public class Wolf extends Animal {
 
     /**
      * This is the {@link Wolf} class constructor.
-     * It takes a String and an int as parameters and sets them as {@code name} and {@code age} of the {@link Wolf}.
+     * It takes a String and an int as parameters and sets them as {@code name} and {@code age} of the new {@link Wolf}.
      */
     public Wolf(String name, int age) {
         super(name, age);
