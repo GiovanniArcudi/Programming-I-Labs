@@ -3,7 +3,7 @@
  * Every Omnivore object has a {@code name} and an {@code age} specified when it is created.
  *
  * @author Giovanni Arcudi
- * @version 1.0
+ * @version 2.0
  */
 public abstract class Omnivore extends Animal {
 
