@@ -18,7 +18,7 @@ public class Food {
     /**
      * Returns the {@code name} of the {@link Food}.
      *
-     *@return the name of the food
+     * @return the name of the food
      */
     public String getName() {
         return name;
