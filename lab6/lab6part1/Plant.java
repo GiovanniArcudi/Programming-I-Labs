@@ -1,14 +1,15 @@
 /**
- * This program defines a Plant, extending the Food superclass.
- * Every Plant has a name specified when it is created.
+ * This program defines a Plant, extending the {@link Food} superclass.
+ * Every Plant has a {@code name} specified when it is created.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class Plant extends Food {
 
     /**
-     * This is the Plant class constructor.
-     * It takes a String as parameter and sets it as name of the Plant.
+     * This is the {@link Plant} class constructor.
+     * It takes a String as parameter and sets it as {@code name} of the {@link Plant}.
      */
     public Plant(String name) {
         super(name);
