@@ -1,13 +1,14 @@
 /**
- * This program demonstrates that it is possible to create wolf and parrot objects and use the methods defined in the
- * Animal superclass. It also creates a Meat and a Plant object.
+ * This program demonstrates that it is possible to create {@link Wolf} and {@link Parrot} objects and use the
+ * methods inherited by the {@link Animal} superclass. It also creates 2 new {@link Meat} and a {@link Plant} objects.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class Main {
 
     /**
-     * Creates a Wolf, a Parrot, a Meat and a Plant object.
+     * Creates a {@link Wolf}, a {@link Parrot}, a {@link Meat} and a {@link Plant} object.
      */
     public static void main(String[] args) {
         Wolf wolf = new Wolf("Giovanni", 18);
