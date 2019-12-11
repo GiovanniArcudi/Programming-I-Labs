@@ -1,5 +1,6 @@
 /**
- * The aim of this class was to getting used to debugging. I successfully managed to debug the code.
+ * The aim of this lab was to getting used to debugging.
+ * I successfully managed to debug the foolowing piece of code (not written by me).
  */
 public class Debug{
 
