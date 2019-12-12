@@ -1,5 +1,5 @@
 /**
- * This program defines a Wolf, extending the {@link Animal} superclass.
+ * This program defines a Wolf, extending the {@link Carnivore} superclass.
  * Every Wolf object has a {@code name} and an {@code age} specified when it is created and a method to make noise.
  *
  * @author Giovanni Arcudi
