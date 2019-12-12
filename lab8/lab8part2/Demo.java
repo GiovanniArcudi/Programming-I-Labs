@@ -66,7 +66,7 @@ public class Demo {
                             public int compareTo(Animal compareToAnimal) {
                                 if(this.getAge() == compareToAnimal.getAge()) {
                                     return 0;
-                                } else if(this.getAge() > compareToAnimal.getAge()) {
+                                } else if (this.getAge() > compareToAnimal.getAge()) {
                                     return compareToAnimal.getAge()-this.getAge();
                                 } else {
                                     return compareToAnimal.getAge()-this.getAge();
