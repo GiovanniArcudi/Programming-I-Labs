@@ -1,7 +1,9 @@
 /**
- * This program defines an Omnivore, extending the Animal superclass.
+ * This program defines an Omnivore, extending the {@link Animal} superclass.
+ * Every Omnivore object has a {@code name} and an {@code age} specified when it is created.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public abstract class Omnivore extends Animal {
 
@@ -16,7 +18,7 @@ public abstract class Omnivore extends Animal {
     }
 
     /**
-     * Prints out a message saying that the omnivore is eating the given food.
+     * Prints out a message saying that the {@link Omnivore} is eating the {@link Food} object passed as parameter.
      *
      * @param food      the food the omnivore has to eat
      */
