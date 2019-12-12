@@ -1,12 +1,14 @@
 /**
- * This program defines a Parrot, extending the Omnivore superclass.
+ * This program defines a Parrot object, extending the Animal superclass.
+ * Every Parrot object has a {@code name} and an {@code age} specified when it is created and a method to make noise.
  *
  * @author Giovanni Arcudi
+ * @version 4.0
  */
 public class Parrot extends Omnivore {
 
     /**
-     * This is the Parrot class constructor.
+     * This is the {@link Parrot} class constructor.
      *
      * @param name      the name of the parrot
      * @param age       the age of the parrot
@@ -23,8 +25,8 @@ public class Parrot extends Omnivore {
     }
 
     /**
-     * This is the second Parrot class constructor.
-     * It sets the input integer as age of a Parrot called "Polly" by default.
+     * This is the second {@link Parrot} class constructor.
+     * It sets the input {@code int} as {@code age} of a {@link Parrot} called "Polly" by default.
      *
      * @param age       the age of the parrot
      */
