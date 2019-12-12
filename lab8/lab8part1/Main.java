@@ -1,18 +1,15 @@
 /**
- * This program demonstrates that it is possible to create animals objects and use the methods defined in the Animal
- * superclass. It also creates a Meat and a Plant object.
+ * This program demonstrates that it is possible to create {@link Wolf} and {@link Parrot} objects and use the
+ * methods inherited by the {@link Animal} superclass. It also creates 2 new {@link Meat} and a {@link Plant} objects.
  *
  * @author Giovanni Arcudi
+ * @version 4.0
  */
 public class Main {
-
-    /**
-     * Performs different tasks for the three parts of the lab.
-     */
     public static void main(String[] args) throws Exception {
 
         /**
-         * (Lab 6 Part I) Creates a Wolf, a Parrot, a Meat and a Plant object. Then it calls makeNoise() method on the wolf.
+         * (Lab 6 Part I) Creates a {@link Wolf}, a {@link Parrot}, a {@link Meat} and a {@link Plant} object.
          */
         Wolf wolf = new Wolf("Giovanni", 18);
         Parrot parrot = new Parrot("Alessandro", 18);
@@ -23,13 +20,13 @@ public class Main {
         wolf.makeNoise();
 
         /**
-         * (Lab 6 Part II) Calls the abstract makeNoise() method on the wolf.
+         * (Lab 6 Part II) Calls the abstract {@link #makeNoise()} method on the {@link Wolf} object.
          */
         wolf.makeNoise();
 
         /**
-         * (Lab 6 Part III) Calls the eat() method on the wolf, the cow and the parrot, expecting to catch exceptions for
-         * the last two cases.
+         * (Lab 6 Part III) Calls the {@link #eat()} method on the {@link Wolf}, the {@link Cow} and the {@link Parrot}, 
+         * expecting to catch exceptions for the last two cases.
          */
         try {
             wolf.eat(beef);
@@ -42,14 +39,14 @@ public class Main {
         }
 
         /**
-         * (Lab 8 Part I) After having overloaded the eat method in the Animal class, I now test its functionality for
-         * an instance of the wolf class.
+         * (Lab 8 Part I) After having overloaded the {@link #eat()} method in the {@link Animal} class, I now test its
+         * functionality for an instance of the {@link Wolf} class.
          */
         wolf.eat(beef, 3);
 
         /**
-         * (Lab 8 Part I) After having overloaded the Animal class constructor, I now test its functionality for an
-         * instance of the wolf class.
+         * (Lab 8 Part I) After having overloaded the {@link Animal} class constructor, I now test its functionality for 
+         * an instance of the {@link Wolf} class.
          */
         Wolf wolfConstructorTest = new Wolf();
     }
