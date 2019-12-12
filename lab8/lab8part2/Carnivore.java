@@ -24,7 +24,7 @@ public abstract class Carnivore extends Animal {
      * @throws Exception        If the food given as parameter is a plant
      */
     public void eat(Food food) throws Exception {
-        if(food instanceof Plant) {
+        if (food instanceof Plant) {
             throw new Exception("Carnivores don't eat plants");
         }
         System.out.println("I am eating " + food.getName());
