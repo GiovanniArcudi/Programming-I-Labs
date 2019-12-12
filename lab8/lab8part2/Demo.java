@@ -2,9 +2,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * This program creates an ArrayList of Animal objects and prints them in age order.
+ * This program creates an ArrayList of {@link Animal} objects and prints them in {@code age} order.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public class Demo {
 
@@ -21,7 +22,7 @@ public class Demo {
         animalsArrayList.add(new Parrot("Ludwig", 34));
         animalsArrayList.add(new Parrot("Franz", 16));
 
-        // To iterate over the array list we use an enhanced loop.
+        // To iterate over the array list we use an enhanced for loop.
         for (Animal animal : animalsArrayList) {
             System.out.println("Animal name: " + animal.getName() + ", Animal age: " + animal.getAge());
         }
@@ -53,7 +54,7 @@ public class Demo {
           but can be invoked if a main() exists.
        7. In comparison with java abstract classes, java interfaces are slow as it requires extra indirection.
 
-       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
        Question:
        How could you make the animals be ordered from highest age to lowest age?
