@@ -3,7 +3,7 @@
  * Every Meat has a {@code name} specified when it is created.
  *
  * @author Giovanni Arcudi
- * @version 4.0
+ * @version 5.0
  */
 public class Meat extends Food {
 
