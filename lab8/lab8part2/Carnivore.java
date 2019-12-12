@@ -3,7 +3,7 @@
  * Every Carnivore object has a {@code name} and an {@code age} specified when it is created.
  *
  * @author Giovanni Arcudi
- * @version 3.0
+ * @version 4.0
  */
 public abstract class Carnivore extends Animal {
 
