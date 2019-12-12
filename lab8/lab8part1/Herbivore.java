@@ -1,7 +1,9 @@
 /**
- * This program defines a Herbivore, extending the Animal superclass.
+ * This program defines a Herbivore, extending the {@link Animal} superclass.
+ * Every Herbivore object has a {@code name} and an {@code age} specified when it is created.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public abstract class Herbivore extends Animal {
 
@@ -16,7 +18,7 @@ public abstract class Herbivore extends Animal {
     }
 
     /**
-     * Prints out a message saying that the herbivore is eating the given food.
+     * Prints out a message saying that the {@link Herbivore} is eating the {@link Food} object passed as parameter.
      *
      * @param food              the food the herbivore has to eat
      * @throws Exception        If the food given as parameter is meat
