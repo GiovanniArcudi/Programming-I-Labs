@@ -1,12 +1,14 @@
 /**
  * This program defines a Carnivore, extending the Animal superclass.
+ * Every Carnivore object has a {@code name} and an {@code age} specified when it is created.
  *
  * @author Giovanni Arcudi
+ * @version 3.0
  */
 public abstract class Carnivore extends Animal {
 
     /**
-     * This is the Carnivore class constructor.
+     * This is the {@link Carnivore} class constructor.
      *
      * @param name      the name of the carnivore
      * @param age       the age of the carnivore
@@ -16,7 +18,7 @@ public abstract class Carnivore extends Animal {
     }
 
     /**
-     * Prints out a message saying that the carnivore is eating the given food.
+     * Prints out a message saying that the {@link Carnivore} is eating the given {@link Food} object.
      *
      * @param food              the food the carnivore has to eat
      * @throws Exception        If the food given as parameter is a plant
@@ -29,8 +31,8 @@ public abstract class Carnivore extends Animal {
     }
 
     /**
-     * This is the second Carnivore class constructor.
-     * It sets the age of a new Carnivore to 0 and name to "newborn", as specified in the Animal class constructor.
+     * This is the second {@link Carnivore} class constructor.
+     * It sets the {@code age} of a new Carnivore to 0 and {@code name} to "newborn", as specified in the {@link Animal} class.
      */
     public Carnivore() {
         super();
