@@ -20,7 +20,7 @@ public abstract class Herbivore extends Animal {
      * the {@link Animal} is eating the given food, else it throws an Exeption.
      */
     public void eat(Food food) throws Exception {
-        if(food instanceof Meat) {
+        if (food instanceof Meat) {
             throw new Exception("Herbivores don't eat meat");
         }
         System.out.println("I am eating " + food.getName());
