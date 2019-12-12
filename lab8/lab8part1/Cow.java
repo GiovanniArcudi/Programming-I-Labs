@@ -1,12 +1,15 @@
 /**
- * This program defines a Cow, extending the Herbivore superclass.
+ * This program defines a Cow, extending the {@link Herbivore} superclass.
+ * Every Cow object has a {@code name} and an {@code age} specified when it is created and a method to make noise.
  *
  * @author Giovanni Arcudi
+ * @version 2.0
  */
 public class Cow extends Herbivore {
 
     /**
-     * This is the Cow class constructor.
+     * This is the {@link Cow} class constructor.
+     * It takes a String and an int as parameters and sets them as {@code name} and {@code age} of the new {@link Cow}.
      *
      * @param name      the name of the cow
      * @param age       the age of the cow
@@ -16,7 +19,7 @@ public class Cow extends Herbivore {
     }
 
     /**
-     * It prints out the typical cow sound.
+     * Prints out the typical {@link Cow} sound.
      */
     public void makeNoise() {
         System.out.println("Muu!");
