@@ -1,7 +1,8 @@
 /**
- * This program defines the Refuelable interface.
+ * This program defines the Refuelable Interface, wich contains the {@link #refuel()} method.
  *
  * @author Giovanni Arcudi
+ * @version 1.0
  */
 public interface Refuelable {
 
